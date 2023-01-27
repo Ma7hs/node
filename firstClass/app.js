@@ -10,8 +10,15 @@ var dataInput = readLine.createInterface({
     output:process.stdout
 });
 
+/*
+Função CallBack:
+    É uma função que quando chamada ela retorna o seu conteúdo
+    em uma única instrção, ou seja, em apenas um passo! 
+*/
+
+//Criamos um CallBack para receber o que o usuário digita no prompt
 dataInput.question(
     "Digite seu nome: \n",
     function(nomeUsuario){
-        console.log('Olá, ' + nomeUsuario + ' Bem-vindo ao servidor Node.JS. ' );
-})
+        console.log('Olá, ' + nomeUsuario + '! Bem-vindo ao servidor Node.JS. ' );
+})  
